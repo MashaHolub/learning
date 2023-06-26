@@ -1,0 +1,148 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px 10px;
+    color: grey;
+    padding: 20px;
+}
+
+.bell {
+    background-image: url(./popup-icons/bell.png);
+}
+
+.profile {
+    background-image: url(./popup-icons/profile.jpg);
+    border-radius: 50%;
+}
+
+.menu_item {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.menu_link_item {
+    color: grey;
+    text-decoration: none;
+}
+
+.size {
+    width: 20px;
+}
+
+.check_span {    
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(./popup-icons/popup-button.png);
+}
+
+.popup_container {
+    position: absolute;
+    background-color:white;
+    box-shadow: 0px 8px 14px -5px black;
+    border: 1px solid #e7e7e7;
+    display: none;
+    top: 30px;
+    right: -42px;
+}
+
+.popup_container:before {
+    content: '';
+    border-left: 11px solid transparent;    
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #e7e7e7;
+    top: -11px;
+    right: 39px;
+    position: absolute;
+}
+
+.popup_container:after {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    top: -10px;
+    right: 40px;
+    position: absolute;
+}
+  
+.check_input:checked ~ .popup_container { /* one level elements*/
+    display: block;
+}
+
+.check_span {
+    position: absolute;
+    top: 0;
+    background-color: white;
+}
+
+.checkbox-wrapper {
+    position: relative;
+}
+ 
+.check_input:focus + .check-label .check_span { /*after + element, which is near*/
+    outline: 5px auto #015fcc;
+}
+
+.popup {
+    display: grid;
+    padding: 30px;
+    grid-template: repeat(4, 90px)/repeat(3, 70px); 
+    gap: 10px 10px;
+    height: 380px;
+    overflow: hidden;
+   }
+
+
+.popup_item {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    justify-self: center;
+    text-align: center;
+}
+
+.popup_item img { 
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup_item span {
+    display: block;
+}
+
+.button_more {
+    height: 40px;
+    background-color: #e7e7e7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_more:hover {
+    height: 40px;
+    background-color: #bfe5ed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button_input {
+    display: none;
+}
+
+.button_input:checked + .popup {
+    overflow: scroll;
+}
+
