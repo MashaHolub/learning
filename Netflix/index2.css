@@ -1,0 +1,343 @@
+html {
+    background-color: #141414;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Light.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Bold.otf);
+    font-weight: 700;
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 0 62px;
+}
+
+.background-stripe {
+    margin-bottom: 12px;
+}
+
+.main_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 17px;
+    padding: 10px 0;
+}
+
+.cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.menu_item {
+    font-family: "NetflixFont";
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 13px;
+    width: 8vw;
+}
+
+.pseudo_link {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.pseudo_link:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    justify-content: flex-start;
+}
+
+.section_name {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 15px;
+    font-family: "NetflixFont";
+    font-weight: 500;
+    position: relative;
+}
+
+.explore_all {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 9px;
+    font-family: "NetflixFont";
+    font-weight: 300;
+    margin-left: 10px;
+    transition: opacity 0.5s, visibilty 0.5s;
+    /* margin-bottom: 10px; */
+    /* transition-delay: 2s; */
+}
+
+.section_name:hover{
+    cursor: default;
+}
+
+.section_name:hover .explore_all {
+    opacity: 1;
+    visibility: visible;
+    color: #54B9C5;
+    cursor: pointer;
+}
+
+.section_container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    gap: 34px;
+}
+
+.film_item {
+    text-decoration: none;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.film_item img {
+    width: 100%;
+}
+
+.film_item:hover .item_hover {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.item_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "NetflixFont";
+    background-color: rgba(0,0,0,0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.change_profile {
+    display: flex;
+    margin-left: auto;
+    gap: 8px;
+    opacity: 1;
+}
+
+.change_profile img {
+    width: 10px;
+}
+
+.profile_img {
+    width: 27px;
+    height: 27px;
+    background-size: cover;
+    background-image: url(./img/Vlad.png); 
+}
+
+.change_profile:hover {
+    opacity: 0.8;
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = min 1025px 
+  */
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+            
+    .container {
+        padding: 0 40px;
+    }
+
+    .background-stripe {
+        margin-bottom: 8px;
+    }
+
+    .main_menu {
+        column-gap: 10px;
+        padding: 6px 0;
+    }
+
+    .menu_item {
+        font-size: 13px;
+        width: 11vw;
+    }
+
+
+    .section {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+    }
+
+    .section_name {
+        font-size: 13px;
+    }
+
+    .explore_all {
+        font-size: 8px;
+    }
+
+    .section_name img {
+        height: 7px;
+    }
+
+    .section_container {
+        flex-wrap: wrap;
+        margin-top: 12px;
+        gap: 25px;
+    }
+
+    .change_profile img {
+        width: 8px;
+    }
+
+    .profile_img {
+        width: 23px;
+        height: 23px;        
+    }
+}
+
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .background-stripe {
+        margin-bottom: 5px;
+    }
+
+    .main_menu {
+        column-gap: 10px;
+        padding: 6px 0;
+    }
+
+    .cover {
+        position: absolute;
+        margin-top: 78px;
+    }
+
+    .film_item {
+        width: 100%;
+    }
+
+    .menu_item {
+        font-size: 10px;
+        flex-wrap: wrap;
+        width: 15vw;
+    }
+
+
+    .section {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 5px;
+    }
+
+    .section_name {
+        font-size: 15px;
+    }
+
+    .explore_all {
+        font-size: 7px;
+    }
+
+    .section_name img {
+        height: 6px;
+    }
+
+    .section_container {
+        flex-wrap: wrap;
+        margin-top: 12px;
+        gap: 5px;
+    }
+
+    .change_profile img {
+        width: 6px;
+    }
+
+    .profile_img {
+        width: 15px;
+        height: 15px;        
+    }
+    
+  }

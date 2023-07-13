@@ -1,0 +1,130 @@
+:root {
+    --profileHoverColor: #ffffff;
+}
+
+html {
+    background-color: #141414;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Light.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "NetflixFont";
+    src: url(./fonts/Netflix\ Sans\ Bold.otf);
+    font-weight: 700;
+}
+
+.login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .center_element {
+    
+} */
+
+.ask_profile {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-size: 54px;
+    font-family: "NetflixFont", sans;
+    font-weight: 700;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    column-gap: 74px;
+}
+
+.profile_item {
+    display: block;
+}
+
+.profile_img img {
+    width: 100%;
+    height: auto;
+}
+
+.profile_img {
+    width: 152px;
+    height: 152px;
+
+    align-self: center;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.profile_name {
+    font-size: 19px;
+    color: #808080;
+    font-family: "NetflixFont";
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add_profile .profile_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_profile .profile_img img {
+    width: initial;
+}
+
+.add_profile:hover .profile_img {
+    background: #E5E5E5;
+}
+
+.profile_item:hover .profile_name {
+    color: var(--profileHoverColor);
+}
+
+.profile_item:hover .profile_img {
+    border: 2px solid #FFF;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.manage_profiles {
+    font-size: 19px;
+    font-family: "NetflixFont", sans;
+    font-weight: 300;
+    color: #808080;
+    border: 1px solid #808080;
+    margin-top: 87px;
+    padding: 8px 50px;
+}
+
+.manage_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage_profiles:hover {
+    color: white;
+    border-color: #FFF;
+}
