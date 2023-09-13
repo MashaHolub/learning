@@ -89,6 +89,9 @@ body {
 .explore_all {
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 9px;
     font-family: "NetflixFont";
     font-weight: 300;
@@ -96,6 +99,11 @@ body {
     transition: opacity 0.5s, visibilty 0.5s;
     /* margin-bottom: 10px; */
     /* transition-delay: 2s; */
+}
+
+.explore_all img {
+    margin-left: 10px;
+    transition: opacity 0.5s, visibilty 0.5s;
 }
 
 .section_name:hover{
