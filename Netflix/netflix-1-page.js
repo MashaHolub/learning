@@ -1,125 +1,115 @@
 
-const filmsArray = [
-    {
-        name: "Borsch",
-        imgLink: "./img/image 3.png",
-        imgAlt: "Borsch",
-        section: "Popular on Netflix",
-        position: 3
-    },
-    {
-        name: "Cabinet of Curiosities",
-        imgLink: "./img/image 6.png",
-        imgAlt: "Cabinet of Curiosities",
-        section: "Popular on Netflix",
-        position: 5
-    },
-    {
-        name: "Spider-Man",
-        imgLink: "./img/image 1.png",
-        imgAlt: "Spider-Man",
-        section: "Popular on Netflix",
-        position: 1
-    },
-    {
-        name: "The Witcher",
-        imgLink: "./img/image 2.png",
-        imgAlt: "The Witcher",
-        section: "Popular on Netflix",
-        position: 2
-    },
-    {
-        name: "Black Mirror",
-        imgLink: "./img/image 5.png",
-        imgAlt: "Black Mirror",
-        section: "Popular on Netflix",
-        position: 4
-    },
-    {
-        name: "The Big Short",
-        imgLink: "./img/image 4.png",
-        imgAlt: "The Big Short",
-        section: "Tranding now",
-        position: 1
-    },
-    {
-        name: "Brooklyn nine-nine",
-        imgLink: "./img/image 7.png",
-        imgAlt: "Brooklyn nine-nine",
-        section: "Tranding now",
-        position: 2
-    },
-    {
-        name: "Howl's Moving Castle",
-        imgLink: "./img/image 16.png",
-        imgAlt: "Howl's Moving Castle",
-        section: "Tranding now",
-        position: 3
-    },
-    {
-        name: "Luxemburg-Luxemburg",
-        imgLink: "./img/image 17.png",
-        imgAlt: "Luxemburg-Luxemburg",
-        section: "Tranding now",
-        position: 4
-    },
-    {
-        name: "Arcane",
-        imgLink: "./img/image 11.png",
-        imgAlt: "Arcane",
-        section: "Tranding now",
-        position: 5
-    },
-    {
-        name: "Dark",
-        imgLink: "./img/image 9.png",
-        imgAlt: "Dark",
-        section: "Casual Viewing",
-        position: 1
-    },
-    {
-        name: "Breaking Bad",
-        imgLink: "./img/image 8.png",
-        imgAlt: "Breaking Bad",
-        section: "Casual Viewing",
-        position: 2
-    },
-    {
-        name: "Shrek",
-        imgLink: "./img/image 15.png",
-        imgAlt: "Shrek",
-        section: "Casual Viewing",
-        position: 3
-    }, 
-    {
-        name: "Stranger Things",
-        imgLink: "./img/image 10.png",
-        imgAlt: "Stranger Things",
-        section: "Casual Viewing",
-        position: 4
-    }, 
-    {
-        name: "Cunk on Earth",
-        imgLink: "./img/image 13.png",
-        imgAlt: "Cunk on Earth",
-        section: "Casual Viewing",
-        position: 5
-    }
-]
+// const filmsArray = [
+//     {
+//         name: "Borsch",
+//         imgLink: "./img/image 3.png",
+//         imgAlt: "Borsch",
+//         section: "Popular on Netflix",
+//         position: 3
+//     },
+//     {
+//         name: "Cabinet of Curiosities",
+//         imgLink: "./img/image 6.png",
+//         imgAlt: "Cabinet of Curiosities",
+//         section: "Popular on Netflix",
+//         position: 5
+//     },
+//     {
+//         name: "Spider-Man",
+//         imgLink: "./img/image 1.png",
+//         imgAlt: "Spider-Man",
+//         section: "Popular on Netflix",
+//         position: 1
+//     },
+//     {
+//         name: "The Witcher",
+//         imgLink: "./img/image 2.png",
+//         imgAlt: "The Witcher",
+//         section: "Popular on Netflix",
+//         position: 2
+//     },
+//     {
+//         name: "Black Mirror",
+//         imgLink: "./img/image 5.png",
+//         imgAlt: "Black Mirror",
+//         section: "Popular on Netflix",
+//         position: 4
+//     },
+//     {
+//         name: "The Big Short",
+//         imgLink: "./img/image 4.png",
+//         imgAlt: "The Big Short",
+//         section: "Tranding now",
+//         position: 1
+//     },
+//     {
+//         name: "Brooklyn nine-nine",
+//         imgLink: "./img/image 7.png",
+//         imgAlt: "Brooklyn nine-nine",
+//         section: "Tranding now",
+//         position: 2
+//     },
+//     {
+//         name: "Howl's Moving Castle",
+//         imgLink: "./img/image 16.png",
+//         imgAlt: "Howl's Moving Castle",
+//         section: "Tranding now",
+//         position: 3
+//     },
+//     {
+//         name: "Luxemburg-Luxemburg",
+//         imgLink: "./img/image 17.png",
+//         imgAlt: "Luxemburg-Luxemburg",
+//         section: "Tranding now",
+//         position: 4
+//     },
+//     {
+//         name: "Arcane",
+//         imgLink: "./img/image 11.png",
+//         imgAlt: "Arcane",
+//         section: "Tranding now",
+//         position: 5
+//     },
+//     {
+//         name: "Dark",
+//         imgLink: "./img/image 9.png",
+//         imgAlt: "Dark",
+//         section: "Casual Viewing",
+//         position: 1
+//     },
+//     {
+//         name: "Breaking Bad",
+//         imgLink: "./img/image 8.png",
+//         imgAlt: "Breaking Bad",
+//         section: "Casual Viewing",
+//         position: 2
+//     },
+//     {
+//         name: "Shrek",
+//         imgLink: "./img/image 15.png",
+//         imgAlt: "Shrek",
+//         section: "Casual Viewing",
+//         position: 3
+//     }, 
+//     {
+//         name: "Stranger Things",
+//         imgLink: "./img/image 10.png",
+//         imgAlt: "Stranger Things",
+//         section: "Casual Viewing",
+//         position: 4
+//     }, 
+//     {
+//         name: "Cunk on Earth",
+//         imgLink: "./img/image 13.png",
+//         imgAlt: "Cunk on Earth",
+//         section: "Casual Viewing",
+//         position: 5
+//     }
+// ]
 
-const menuItemsArray = ["Home", "TV Shows", "Movies", "New & Popular","My List"]
-const sectionsArray = ["Popular on Netflix", "Tranding now", "Casual viewing"]
+//const menuItemsArray = ["Home", "TV Shows", "Movies", "New & Popular","My List"]
+//const sectionsArray = ["Popular on Netflix", "Tranding now", "Casual viewing"]
 
-const mainMenuContainer = document.getElementById("main_menu_items")
-
-const sectionName1 = document.getElementById("sectionPopularOnNetflix")
-const sectionName2 = document.getElementById("sectionTrandingNow")
-const sectionName3 = document.getElementById("sectionCasualViewing")
-
-
-const sectionContainer1 = document.getElementById("filmsPopularOnNetflix")
-const sectionContainer2 = document.getElementById("filmsTrandingNow")
-const sectionContainer3 = document.getElementById("filmsCasualViewing")
 
 function createMainMenuItem(menuItem) {
     const menuName = document.createElement("a")
@@ -174,53 +164,72 @@ function createFilmItem(filmItem) {
     return newFilmItem
 }
 
+const sectionContainer1 = document.getElementById("filmsPopularOnNetflix")
+const sectionContainer2 = document.getElementById("filmsTrandingNow")
+const sectionContainer3 = document.getElementById("filmsCasualViewing")
+
 const createdFilmsArray = [[],[],[]]
 
-filmsArray.forEach(function(object){
-    // switch case
-    if (object.section === "Popular on Netflix") {
+fetch('http://localhost:8080/movies', { method: 'GET' })
+    .then((res) => {
+        return res.json()
+    })
+    .then((data) => {
+    data.movies.forEach(function(object){
         const filmItem = createFilmItem(object)
-        createdFilmsArray[0].push(filmItem)
-    }  
-    else if (object.section === "Tranding now") {
-        const filmItem = createFilmItem(object)
-        createdFilmsArray[1].push(filmItem)
-    }  
-    else if (object.section === "Casual Viewing") {
-        const filmItem = createFilmItem(object)
-        createdFilmsArray[2].push(filmItem)
-    }  
-})
+        switch (object.section) {
+            case "Popular on Netflix":
+                createdFilmsArray[0].push(filmItem)
+                break
+            case "Tranding now":
+                createdFilmsArray[1].push(filmItem)
+                break
+            case "Casual Viewing":
+                createdFilmsArray[2].push(filmItem)
+                break
+        }
+    })
 
-sectionContainer1.prepend(...createdFilmsArray[0])
-sectionContainer2.prepend(...createdFilmsArray[1])
-sectionContainer3.prepend(...createdFilmsArray[2])
+    sectionContainer1.prepend(...createdFilmsArray[0])
+    sectionContainer2.prepend(...createdFilmsArray[1])
+    sectionContainer3.prepend(...createdFilmsArray[2])
+    })
 
 const createdMenuItems = []
 
-menuItemsArray.forEach(function(object){
-    const menuItem = createMainMenuItem(object)
-    createdMenuItems.push(menuItem)
-})
+const mainMenuContainer = document.getElementById("main_menu_items")
 
-mainMenuContainer.prepend(...createdMenuItems)
+fetch('http://localhost:8080/menu', { method: 'GET' })
+    .then((res) => {
+        return res.json()
+    })
+    .then((data) => {
+        data.menu.forEach(function(object){
+            const menuItem = createMainMenuItem(object)
+            createdMenuItems.push(menuItem)
+        })
+        mainMenuContainer.prepend(...createdMenuItems)
+    })
 
+
+const sectionName1 = document.getElementById("sectionPopularOnNetflix")
+const sectionName2 = document.getElementById("sectionTrandingNow")
+const sectionName3 = document.getElementById("sectionCasualViewing")
+    
 const createdSectionsArray = []
 
-sectionsArray.forEach(function(object){
-    const sectionName = createSectionName(object)
-    createdSectionsArray.push(sectionName)
-})
+fetch('http://localhost:8080/sections', { method: 'GET' })
+    .then((res) => {
+        return res.json()
+    })
+    .then((data) => {
+        data.sections.forEach(function(object){
+            const sectionName = createSectionName(object)
+            createdSectionsArray.push(sectionName)
+        })
+    sectionName1.prepend(createdSectionsArray[0])
+    sectionName2.prepend(createdSectionsArray[1])
+    sectionName3.prepend(createdSectionsArray[2])
+    })
 
-sectionName1.prepend(createdSectionsArray[0])
-sectionName2.prepend(createdSectionsArray[1])
-sectionName3.prepend(createdSectionsArray[2])
-
-
-
-
-
-
-//sectionConteiner.append(createFilmItem(filmsArray[1]))
-//console.log(createFilmItem(filmsArray[1]))
 
