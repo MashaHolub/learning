@@ -177,7 +177,7 @@ app.get('/movies', (req, res) => {
 })
 
 app.patch('/movies/:id', (req, res) => {
-    const id = req.params.id;
+    const {id} = req.params;
     movies.some((m, i) => {
         if (m.id === id) {
             movies[i] = { ...m, ...req.body };
@@ -206,5 +206,5 @@ app.get("/sections", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log("Server Listening on: http://localhost:"+PORT);
+    console.log(`Server Listening on: http://localhost:${PORT}`);
 });

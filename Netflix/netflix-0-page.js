@@ -27,55 +27,16 @@ function createProfileItem(profileImage, profileName) {
     return newProfileItem
 }
 
-const profilesArray = [
-    {
-        name: "Vlad",
-        imgLink: "./img/Vlad.png",
-        imgId: "profile_Vlad",
-        imgAlt: "profile_photo"
-    },
-    {
-        name: "Masha",
-        imgLink: "./img/Masha.png",
-        imgId: "profile_Masha",
-        imgAlt: "profile_photo"
-    },
-    {
-        name: "Add Profile",
-        imgLink: "./img/+.svg",
-        imgId: "add_Profile",
-        imgAlt: "profile_photo"
-    }
-
-]
-
 const createdProfilesArray = []
-
-// profilesArray.forEach(function(object) {
-//     const profileName = createProfileName(object.name)
-//     const imgProfile = createImg(object.imgLink, object.imgId, object.imgAlt)
-//     const profile = createProfileItem(imgProfile, profileName)
-//     if (object.name === "Add Profile") {
-//         profile.classList.add("add_Profile")
-//     } 
-//     createdProfilesArray.push(profile) 
-// })
-
-//createdProfiles.prepend(...createdProfilesArray) 
 
 // append - heavy action, so better to make it one time (not inside the loop)
 // prepend – insert object at the beginning of the element 
 
-
-
-
 fetch('http://localhost:8080/profiles', { method: 'GET' })
-    .then((res) => {
-        return res.json()
-    })
+    .then((res) => res.json())
     .then((data) => {
         
-        data.profiles.forEach(function(object) {
+        data.profiles.forEach((object) => {
             const profileName = createProfileName(object.name)
             const imgProfile = createImg(object.imgLink, object.imgId, object.imgAlt)
             const profile = createProfileItem(imgProfile, profileName)
