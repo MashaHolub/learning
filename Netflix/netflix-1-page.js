@@ -1,5 +1,7 @@
 import { createMainMenuItem } from "./components/mainMenuItem.js"
-import {createSections} from './components/sections.js';
+import {createSections} from './components/sections.js'
+import {createSectionFilmsContainer} from './components/sectioFilmsContainer.js'
+import {createSectionNameContainer} from './components/sectionNameContainer.js'
 
 const createdMenuItems = []
 const mainMenuContainer = document.getElementById("main_menu_items")
@@ -29,16 +31,12 @@ function clearHomePage() {
             
             .then((res) => res.json())
             
-            .then(() => {
+            .then((filmsArray) => {
             if (inputValue!=="") {
                 clearHomePage()
-
-                // data.forEach(function(object){
-                // const filmItem = createFilmItem(object)
-                // createdFilmsArray.push(filmItem)
-                // })
-                // sectionContainer1.prepend(...createdFilmsArray)
-                
+                const filmsFromSearchContainer = document.getElementById("all_films_on_page")
+                const searchSectionName = createSectionNameContainer("Search results")
+                filmsFromSearchContainer.append(searchSectionName, createSectionFilmsContainer("Search results",filmsArray))               
             } else {
                 clearHomePage()
                 createSections()
