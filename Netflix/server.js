@@ -181,14 +181,17 @@ app.patch('/movies/:id', (req, res) => {
     movies.some((m, i) => {
         if (m.id === id) {
             movies[i] = { ...m, ...req.body };
+            return true
         }
+
+        return false
     })
 
     res.json(movies.find(m => m.id === id));
 })
 
 app.post('/search', (req, res) => {
-    res.json(movies.filter(m => m.name.includes(req.query.name)));
+    res.json(movies.filter(m => m.name.toLowerCase().includes(req.query.name.toLowerCase())));
 })
 
 app.get("/menu", (req, res) => {
